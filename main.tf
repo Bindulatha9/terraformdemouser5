@@ -1,7 +1,8 @@
-resource "aws_vpc" "vpc1" {
-    cidr_block = "10.100.5.0/16"
+resource "aws_instance" "ec21" {
+    ami = "ami-06b21ccaeff8cd686"
+    instance_type = "t2.micro"
     tags = {
-        Name = "myvpc"
+        Name = "user5instance"
     }
   
 }
